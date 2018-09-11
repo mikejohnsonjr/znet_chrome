@@ -7,7 +7,7 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
     var name = parts[parts.length - 2];
     var domain = parser.hostname;
 
-    if (["bos"].indexOf(tld) !== -1 || name == 'movingcollage') {
+    if (["bos"].indexOf(tld) !== -1) {
         
         var access = (parser.protocol == "https:" ? "HTTPS" : "PROXY");
         var port = (parser.protocol == "https:" ? "443" : "80");
