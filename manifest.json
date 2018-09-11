@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "bosnet",
+    "version": "1.1",
+    "description": "Black Ontological Sites Network",
+    "icons": {
+    //    "16": "icon16.png",
+    //    "48": "icon48.png",
+    //    "128": "icon128.png"
+    },
+    "background": {
+        "scripts": [
+            "bosnet.js"
+        ]
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "proxy",
+        "*://*.bosnet.io/*",
+        "*://*.bos/*",
+        "*://*.com/*",
+        "*://*.org/*",
+        "*://*.net/*",
+        "*://*.black/*"
+    ],
+    "homepage_url": "http://bosnet.io/"
+}
