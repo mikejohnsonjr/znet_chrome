@@ -6,14 +6,14 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
     var tld = parts[parts.length - 1];
     var name = parts[parts.length - 2];
     var domain = parser.hostname;
-
-    if (["bos"].indexOf(tld) !== -1) {
+    var tld_array = ["bos","o","on","ont","nb","b","a","bob","bl","i","t","s",]
+    if (tld_array.indexOf(tld) !== -1) {
         
         var access = (parser.protocol == "https:" ? "HTTPS" : "PROXY");
         var port = (parser.protocol == "https:" ? "443" : "80");
         if (sessionStorage.getItem(domain) == undefined) {
             var xhr = new XMLHttpRequest();
-            var url = "http://www.bosnet.io/api/query?name=" + encodeURIComponent(domain);
+            var url = "http://www.bosnet.io/api/dns_query/?name=" + encodeURIComponent(domain);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     var xmlDoc = xhr.responseXML;

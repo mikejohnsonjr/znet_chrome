@@ -3,6 +3,11 @@
     "name": "bosnet",
     "version": "0.1",
     "description": "Black Ontological Sites Network",
+    "icons": {
+        "16": "bosnet16.png",
+        "48": "bosnet48.png",
+        "128": "bosnet128.png"
+    },
     "background": {
         "scripts": [
             "bosnet.js"
@@ -15,12 +20,17 @@
         "*://*.bosnet.io/*",
         "*://*.bos/*",
         "*://*.bob/*",
-        "*://*.o/*"
+        "*://*.o/*",
         "*://*.on/*",
         "*://*.ont/*",
-        "*://*.af/*",
         "*://*.nb/*",
         "*://*.b/*",
+        "*://*.a/*",
+        "*://*.bl/*",
+        "*://*.i/*",
+        "*://*.t/*",
+        "*://*.c/*",
+        "*://*.s/*"
     ],
     "homepage_url": "http://bosnet.io/"
 }
