@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "bosnet",
+    "name": "znet",
     "version": "0.1",
-    "description": "Black Ontological Sites Network",
+    "description": "The Zeal Decentralized Network",
     "icons": {
         "16": "bosnet16.png",
         "48": "bosnet48.png",
@@ -10,27 +10,21 @@
     },
     "background": {
         "scripts": [
-            "bosnet.js"
+            "znet.js"
         ]
     },
     "permissions": [
         "webRequest",
         "webRequestBlocking",
         "proxy",
-        "*://*.bosnet.io/*",
-        "*://*.bos/*",
-        "*://*.bob/*",
-        "*://*.o/*",
-        "*://*.on/*",
-        "*://*.ont/*",
-        "*://*.nb/*",
-        "*://*.b/*",
-        "*://*.a/*",
-        "*://*.bl/*",
-        "*://*.i/*",
-        "*://*.t/*",
-        "*://*.c/*",
-        "*://*.s/*"
+        "*://*.zealchain.com/*",
+        "*://*.z/*",
+        "*://*.ze/*",
+        "*://*.zeal/*",
+        "*://*.bit/*",
+        "*://*.eth/*",
+        "*://*.lib/*",
+        "*://*.coin/*",
     ],
-    "homepage_url": "http://bosnet.io/"
+    "homepage_url": "http://zealchain.com/"
 }

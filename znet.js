@@ -13,7 +13,7 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
         var port = (parser.protocol == "https:" ? "443" : "80");
         if (sessionStorage.getItem(domain) == undefined) {
             var xhr = new XMLHttpRequest();
-            var url = "http://www.bosnet.io/api/dns_query/?name=" + encodeURIComponent(domain);
+            var url = "http://www.zealchain.com/api/dns_query/?name=" + encodeURIComponent(domain);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     var xmlDoc = xhr.responseXML;
