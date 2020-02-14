@@ -6,7 +6,7 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
     var tld = parts[parts.length - 1];
     var name = parts[parts.length - 2];
     var domain = parser.hostname;
-    var tld_array = ["bos","o","on","ont","nb","b","a","bob","bl","i","t","s",]
+    var tld_array = ["z","ze","zeal","bit","eth","lib","coin"]
     if (tld_array.indexOf(tld) !== -1) {
         
         var access = (parser.protocol == "https:" ? "HTTPS" : "PROXY");

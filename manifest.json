@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "znet",
-    "version": "0.1",
+    "version": "0.5",
     "description": "The Zeal Decentralized Network",
     "icons": {
         "16": "bosnet16.png",
@@ -24,7 +24,7 @@
         "*://*.bit/*",
         "*://*.eth/*",
         "*://*.lib/*",
-        "*://*.coin/*",
+        "*://*.coin/*"
     ],
     "homepage_url": "http://zealchain.com/"
 }

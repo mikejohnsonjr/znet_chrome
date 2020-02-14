@@ -1,3 +1,3 @@
 # znet
 
-Code for the Zeal Decentralized Network Chrome Extension.
+The Zeal Decentralized Network Chrome Extension.
