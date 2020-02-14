@@ -1,4 +1,3 @@
-/* (c) 2017 PeerName | https://peername.com */
 chrome.webRequest.onBeforeRequest.addListener(function(details) {
     var parser = document.createElement('a');
     parser.href = details.url;
