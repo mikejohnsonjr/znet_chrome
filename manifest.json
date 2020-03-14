@@ -24,7 +24,7 @@
         "*://*.zn/*",
         "*://*.znet/*",
         "*://*.ze/*",
-        "*://*.o/*",
+        "*://*.o/*"
 
     ],
     "homepage_url": "https://zealchain.com/"
