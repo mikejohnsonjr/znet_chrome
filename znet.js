@@ -5,14 +5,14 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
     var tld = parts[parts.length - 1];
     var name = parts[parts.length - 2];
     var domain = parser.hostname;
-    var tld_array = ["z","ze","zeal","bit","eth","lib","coin"]
+    var tld_array = ["z","ze","zeal","zn","znet","o", "e"]
     if (tld_array.indexOf(tld) !== -1) {
         
         var access = (parser.protocol == "https:" ? "HTTPS" : "PROXY");
         var port = (parser.protocol == "https:" ? "443" : "80");
         if (sessionStorage.getItem(domain) == undefined) {
             var xhr = new XMLHttpRequest();
-            var url = "http://www.zealchain.com/api/dns_query/?name=" + encodeURIComponent(domain);
+            var url = "https://zealchain.com/api/dns_query/?name=" + encodeURIComponent(domain);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     var xmlDoc = xhr.responseXML;
